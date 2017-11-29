@@ -1,0 +1,27 @@
+<body>
+  <br><br>
+<div class="container">
+  <h1 style="text-align:center;">View All Data</h1><br>
+  <table>
+    <thead>
+      <tr >
+        <th>Email</th>
+        <th>Name</th>
+        <th>Mobile No.</th>
+        <th>Subject</th>
+        <th>Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data">
+        <td>{{d.email}}</td>
+        <td>{{d.name}}</td>
+        <td>{{d.number}}</td>
+        <td>{{d.subject}}</td>
+        <td>{{d.message}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+</body>
